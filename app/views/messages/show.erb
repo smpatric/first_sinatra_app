@@ -12,6 +12,14 @@
   <%= @message.content %>
 </p>
 
+
+  <% @author_messages.each do |m| %> 
+  <p>
+  <%= m.content %>
+  </p>
+
+  <% end %>
+
 <hr/>
 <a href="/messages">Back to All Messages</a>
 
